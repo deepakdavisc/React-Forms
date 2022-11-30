@@ -1,0 +1,28 @@
+{
+  "name": "msa",
+  "version": "1.0.0",
+  "description": "multi step application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node msaServer/server.js",
+    "server": "nodemon msaServer/server.js",
+    "client": "npm start --prefix msaui",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.5.0",
+    "util": "^0.12.4"
+  },
+  "devDependencies": {
+    "concurrently": "^7.3.0",
+    "nodemon": "^2.0.19"
+  }
+}
